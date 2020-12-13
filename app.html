@@ -55,7 +55,20 @@
 					<button class="btn btn-primary" onclick="Stop();"> Stop Strip </button>
 				</div>
 				<div class="col-xs-12">
-                        		<button class="btn btn-danger" onclick="StartRainbow();"> Start Rainbow </button>
+					<button class="btn btn-danger" onclick="StartRainbow();"> Start Rainbow </button>
+				</div>
+				<div class="col-xs-12">
+					<button
+							class="jscolor {valueElement:PlainColor,value:'66ccff'} pull"
+							style="border:2px solid black">
+						Pick Color 1
+					</button>
+					<input style="display:none;" id="PlainColor">
+					<br><br>
+					<br><br> Dance Brightness: <input type="text" id="PlainBrightness" name="PlainBrightness" data-provide="slider" onchange="UpdatePlainBrightness();" data-slider-min="1" data-slider-max="255" data-slider-step="1" data-slider-value="255" data-slider-tooltip="hide" >
+					<div style="width:100%;text-align:center;">
+						<button class="btn btn-success" type="button" onclick="StartPlain();"> Apply </button>
+					</div>
 				</div>
 			</div>
 		</div> <!-- ./tab-pane -->

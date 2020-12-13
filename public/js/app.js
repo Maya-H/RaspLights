@@ -81,6 +81,23 @@ function UpdateRainbowSpeed() {
 }
 
 /*****************
+ Plain
+ *****************/
+
+function StartPlain() {
+	var args = {
+		Color1: $("#PlainColor").val(),
+		Brightness: $("#PlainBrightness").val()
+	};
+
+	AnimationRequest("plain", "Plain", args);
+}
+
+function UpdatePlainBrightness() {
+	StartPlain();
+}
+
+/*****************
 	Common
 *****************/
 
