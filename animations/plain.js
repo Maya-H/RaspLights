@@ -19,7 +19,7 @@ function plain() {
         strip.Mode = "Color";
         strip.SetStripColor(Color);
         console.log(JSON.stringify(args));
-        strip.SetBrightness(args.Brightness);
+        strip.SetBrightness(parseInt(args.Brightness));
     };
 }
 
