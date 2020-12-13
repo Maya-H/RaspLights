@@ -89,8 +89,8 @@ function StartPlain() {
 		Color1: $("#PlainColor").val(),
 		Brightness: $("#PlainBrightness").val()
 	};
-
-	AnimationRequest("plain", "Plain", args);
+	console.log(JSON.stringify(args));
+		AnimationRequest("plain", "Plain", args);
 }
 
 function UpdatePlainBrightness() {
